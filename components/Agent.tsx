@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-import { vapi } from "@/lib/vapi";
+import { vapi } from "@/lib/vapi.sdk";
 import { interviewer } from "@/constants";
 import { createFeedback } from "@/lib/actions/general.action";
 
@@ -25,7 +25,7 @@ const Agent = ({
     userName,
     userId,
     interviewId,
-    feeddbackId,
+    feedbackId,
     type,
     questions,
 } : AgentProps) => {
